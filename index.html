@@ -49,7 +49,7 @@
             >Create account.
             <button
               class="text-blue-500 font-bold"
-              onclick="my_modal_3.showModal()"
+              id="openModalBtn"
             >
               It’s free!</button
             ><i class="fa-solid fa-caret-down p-2 px-3"></i
@@ -440,26 +440,40 @@
 
       <!-- modal -->
       <!-- signUp modal -->
-      <!-- You can open the modal using ID.showModal() method -->
-      <!-- <button class="btn" onclick="my_modal_3.showModal()">open modal</button> -->
-      <dialog
-        id="my_modal_3"
-        class="modal left-[50%] top-[50%] -translate-x-1/2 -translate-y-1/2"
-      >
-        <div class="p-8 bg-transparent">
-          <div class="modal-box bg-transparent">
-            <form method="dialog">
-              <button
-                class="btn btn-sm btn-circle btn-ghost absolute -right-5 -top-10 bg-red-500 size-6 rounded-full"
-              >
-                ✕
-              </button>
-            </form>
-            <h3 class="text-lg font-bold">Hello!</h3>
-            <p class="py-4">Press ESC key or click on ✕ button to close</p>
+    <div id="myModal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden">
+      
+      <div class="bg-white rounded-lg shadow-lg w-[740px] relative ">
+          <button class="close absolute -top-8 -right-5 text-gray-500 hover:text-gray-700 size-5 text-2xl flex justify-center items-center rounded-full bg-white">&times;</button>
+         <!-- signUp up -->
+         <div class="bg-[#EFFFF4] rounded-lg">
+          <h2 class="text-green-500 p-4 text-center">Let's learn, share & inspire each other with our passion for computer engineering. Sign up now 🤘🏼</h2>
+         </div>
+         <!-- content -->
+          <div class="p-8">
+             <div class="flex justify-between items-center">
+                <h2 class="text-2xl font-bold text-[#3D3D3D]">Create Account</h2>
+                <span>Already have an account? <button class="text-blue-500">Sign In</button></span>
+             </div>
+             <!-- signUp from -->
+              <div>
+                <div>
+                  <form>
+                    <div>
+                      <input type="text" placeholder="First Name">
+                      <input type="text" placeholder="Last Name">
+                    </div>
+                    <input type="email">
+                    <input type="password" placeholder="password">
+                    <input type="password" placeholder="confirm password">
+                    <input type="submit" value="Create Account">
+                 </form>
+                 <button></button>
+                </div>
+              </div>
+             <!-- signUp from -->
           </div>
-        </div>
-      </dialog>
+      </div>
+  </div>
       <!-- modal -->
     </main>
 
