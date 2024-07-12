@@ -47,10 +47,7 @@
         <div>
           <span
             >Create account.
-            <button
-              class="text-blue-500 font-bold"
-              id="openModalBtn"
-            >
+            <button class="text-blue-500 font-bold" id="openModalBtn">
               It’s free!</button
             ><i class="fa-solid fa-caret-down p-2 px-3"></i
           ></span>
@@ -59,12 +56,27 @@
 
       <!-- banner section -->
       <section>
-        <div class="banner_image w-full md:w-full h-[200px] lg:h-[440px]  relative bg-contain  md:bg-center my-2 ">
+        <div
+          class="banner_image w-full md:w-full h-[200px] lg:h-[440px] relative bg-contain md:bg-center my-2"
+        >
           <!-- content -->
           <div class="absolute bottom-[10%] left-[10%]">
-            <h1 class="text-2xl md:text-3xl text-white font-bold">Computer Engineering</h1>
+            <h1 class="text-2xl md:text-3xl text-white font-bold">
+              Computer Engineering
+            </h1>
             <p class="text-white">142,765 Computer Engineers follow this</p>
           </div>
+          <!-- banner nav for small scan-->
+          <nav
+            class="flex justify-between p-10 top-0 left-0 absolute w-full md:hidden"
+            id="openModalBtnThree"
+          >
+            <span><i class="fa-solid fa-arrow-left fa-2x text-white"></i></span>
+            <button class="text-white font-bold rounded py-2 px-3 border-2">
+              Join Group
+            </button>
+          </nav>
+          <!-- banner nav -->
         </div>
       </section>
     </header>
@@ -74,7 +86,9 @@
       <!-- post section -->
       <section>
         <!-- post nav lg sceen-->
-        <nav class="hidden md:flex justify-between items-center border-b-2 py-4 my-8">
+        <nav
+          class="hidden md:flex justify-between items-center border-b-2 py-4 my-8"
+        >
           <!-- right site   -->
           <ul class="flex gap-5">
             <li class="font-bold"><a href="#">All Posts(32)</a></li>
@@ -96,7 +110,9 @@
           </div>
         </nav>
         <!-- post nav small sceen-->
-        <nav class="flex md:hidden justify-between items-center border-b-2 py-4 my-3 px-10">
+        <nav
+          class="flex md:hidden justify-between items-center border-b-2 py-4 my-3 px-10"
+        >
           <!-- right site   -->
           <ul class="flex gap-5">
             <li class="font-bold"><a href="#"> Posts(320)</a></li>
@@ -454,121 +470,185 @@
 
       <!-- modal -->
       <!-- signUp modal -->
-    <div id="myModal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden">
-      
-      <div class="bg-white rounded-lg shadow-lg w-[740px] relative ">
-          <button class="close absolute -top-8 -right-4 text-gray-500 hover:text-gray-700 size-5 text-2xl flex justify-center items-center rounded-full bg-white">&times;</button>
-         <!-- signUp up -->
-         <div class="bg-[#EFFFF4] rounded-lg">
-          <h2 class="text-green-500 p-4 text-center">Let's learn, share & inspire each other with our passion for computer engineering. Sign up now 🤘🏼</h2>
-         </div>
-         <!-- content -->
-          <div class="p-8">
-             <div class="flex justify-between items-center">
-                <h2 class="text-2xl font-bold text-[#3D3D3D]">Create Account</h2>
-                <span>Already have an account? <button class="text-blue-500" id="signInOpenModalBtn">Sign In</button></span>
-             </div>
-             <!-- signUp from -->
-              <div class="flex gap-5 justify-between items-buttom mt-3">
-                <!-- left site -->
-                <div class="min-w-[320px]">
-                  <form>
-                    <div class="flex [&>input]:w-[160px] [&>input]:border-2 [&>input]:p-3 [&>input]:outline-none">
-                      <input type="text" placeholder="First Name">
-                      <input type="text" placeholder="Last Name">
-                    </div>
-                    <div class="[&>input]:border-2 [&>input]:p-3 [&>input]:outline-none [&>input]:w-full">
-                      <input type="email" placeholder="Email">
-                    </div>
-                   <div class="[&>input]:border-2 [&>input]:p-3 [&>input]:outline-none [&>input]:w-full"> <input type="password" placeholder="password">
-                  </div>
-                    <div class="[&>input]:border-2 [&>input]:p-3 [&>input]:outline-none [&>input]:w-full"><input type="password" placeholder="confirm password">
-                    </div>
-                   <div class="[&>input]:p-3 [&>input]:outline-none [&>input]:w-full my-5 bg-blue-500 rounded-full text-white font-bold  cursor-pointer">
-                    <input type="submit" value="Create Account">
-                   </div>
-                 </form>
-                <div>
-                  <button class="p-3 border-2 text-center w-full"><i class="fa-brands fa-facebook text-blue-500 mr-2"></i> Sign Up with Facebook</button>
-                </div>
-                <div>
-                  <button class="p-3 border-2 text-center w-full my-2"><i class="fa-brands fa-google text-orange-500 mr-2"></i> Sign Up with Google</button>
-                </div>
-                </div>
-                <!-- right site -->
-                 <div class="min-w-[320px]">
-                   <figure class="w-full p-10">
-                    <img src="./images//signUpBanner.png" alt="">
-                   </figure>
-
-                   <p class="text-center text-gray-400 text-[14px] w-[318px]">By signing up, you agree to our Terms & conditions, Privacy policy</p>
-                 </div>
-              </div>
-             <!-- signUp from -->
+      <div
+        id="myModal"
+        class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden"
+      >
+        <div
+          class="bg-white rounded-lg shadow-lg w-11/12 md:w-[740px] relative"
+        >
+          <button
+            class="close absolute top-2 right-2 md:-top-8 md:-right-4 text-gray-500 hover:text-gray-700 size-5 text-2xl flex justify-center items-center rounded-full bg-white"
+          >
+            &times;
+          </button>
+          <!-- signUp up -->
+          <div class="bg-[#EFFFF4] rounded-lg">
+            <h2 class="text-green-500 p-4 text-center">
+              Let's learn, share & inspire each other with our passion for
+              computer engineering. Sign up now 🤘🏼
+            </h2>
           </div>
+          <!-- content -->
+          <div class="p-4 md:p-8">
+            <div class="flex justify-between items-center">
+              <h2 class="text-2xl font-bold text-[#3D3D3D]">Create Account</h2>
+              <span
+                >Already have an account?
+                <button class="text-blue-500" id="signInOpenModalBtn">
+                  Sign In
+                </button></span
+              >
+            </div>
+            <!-- signUp from -->
+            <div class="md:flex gap-5 justify-between items-buttom mt-3">
+              <!-- left site -->
+              <div class="min-w-full w-9/12 md:min-w-[320px]">
+                <form>
+                  <div
+                    class="flex w-full [&>input]:w-full md:[&>input]:w-[160px] [&>input]:border-2 [&>input]:p-3 [&>input]:outline-none"
+                  >
+                    <input type="text" placeholder="First Name" />
+                    <input type="text" placeholder="Last Name" />
+                  </div>
+                  <div
+                    class="[&>input]:border-2 [&>input]:p-3 [&>input]:outline-none [&>input]:w-full"
+                  >
+                    <input type="email" placeholder="Email" />
+                  </div>
+                  <div
+                    class="[&>input]:border-2 [&>input]:p-3 [&>input]:outline-none [&>input]:w-full"
+                  >
+                    <input type="password" placeholder="password" />
+                  </div>
+                  <div
+                    class="[&>input]:border-2 [&>input]:p-3 [&>input]:outline-none [&>input]:w-full"
+                  >
+                    <input type="password" placeholder="confirm password" />
+                  </div>
+                  <div
+                    class="[&>input]:p-3 [&>input]:outline-none [&>input]:w-full my-5 bg-blue-500 rounded-full text-white font-bold cursor-pointer"
+                  >
+                    <input type="submit" value="Create Account" />
+                  </div>
+                </form>
+                <div>
+                  <button class="p-3 border-2 text-center w-full">
+                    <i class="fa-brands fa-facebook text-blue-500 mr-2"></i>
+                    Sign Up with Facebook
+                  </button>
+                </div>
+                <div>
+                  <button class="p-3 border-2 text-center w-full my-2">
+                    <i class="fa-brands fa-google text-orange-500 mr-2"></i>
+                    Sign Up with Google
+                  </button>
+                </div>
+              </div>
+              <!-- right site -->
+              <div class="hidden md:block min-w-[320px]">
+                <figure class="w-full p-10">
+                  <img src="./images//signUpBanner.png" alt="" />
+                </figure>
+
+                <p class="text-center text-gray-400 text-[14px] w-[318px]">
+                  By signing up, you agree to our Terms & conditions, Privacy
+                  policy
+                </p>
+              </div>
+            </div>
+            <!-- signUp from -->
+          </div>
+        </div>
       </div>
-  </div>
       <!-- signIn modal -->
-    <div id="mySignInModal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden">
-      
-      <div class="bg-white rounded-lg shadow-lg w-[740px] relative ">
-          <button class="close absolute -top-8 -right-4 text-gray-500 hover:text-gray-700 size-5 text-2xl flex justify-center items-center rounded-full bg-white">&times;</button>
-         <!-- signUp up -->
-         <div class="bg-[#EFFFF4] rounded-lg">
-          <h2 class="text-green-500 p-4 text-center">Let's learn, share & inspire each other with our passion for computer engineering. Sign up now 🤘🏼</h2>
-       
-         </div>
-         <!-- content -->
-          <div class="p-8">
-             <div class="flex justify-between items-center">
-                <h2 class="text-2xl font-bold text-[#3D3D3D]">Sign In</h2>
-                <span>Don’t have an account yet?  <button class="text-blue-500"   id="openModalBtnTwo">Create new for free!</button></span>
-             </div>
-             <!-- signUp from -->
-              <div class="flex gap-5 justify-between items-buttom mt-6">
-                <!-- left site -->
-                <div class="min-w-[320px]">
-                  <form>
-                  
-                    <div class="[&>input]:border-2 [&>input]:p-3 [&>input]:outline-none [&>input]:w-full">
-                      <input type="email" placeholder="Email">
-                    </div>
-                   <div class="[&>input]:border-2 [&>input]:p-3 [&>input]:outline-none [&>input]:w-full"> <input type="password" placeholder="password">
-                  </div>
-                   <div class="[&>input]:p-3 [&>input]:outline-none [&>input]:w-full my-5 bg-blue-500 rounded-full text-white font-bold  cursor-pointer">
-                    <input type="submit" value="Sign In">
-                   </div>
-                 </form>
-                <div>
-                  <button class="p-3 border-2 text-center w-full"><i class="fa-brands fa-facebook text-blue-500 mr-2"></i> Sign Up with Facebook</button>
-                </div>
-                <div>
-                  <button class="p-3 border-2 text-center w-full my-2"><i class="fa-brands fa-google text-orange-500 mr-2"></i> Sign Up with Google</button>
-                  <button class="p-3 text-center w-full my-2"> Forget Password</button>
-                </div>
-                </div>
-                <!-- right site -->
-                 <div class="min-w-[320px]">
-                   <figure class="w-full">
-                    <img src="./images//signUpBanner.png" alt="">
-                   </figure>
-
-                 </div>
-              </div>
-             <!-- signUp from -->
+      <div
+        id="mySignInModal"
+        class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden"
+      >
+        <div
+          class="bg-white rounded-lg shadow-lg w-11/12 md:w-[740px] relative"
+        >
+          <button
+            class="close absolute top-2 right-2 md:-top-8 md:-right-4 text-gray-500 hover:text-gray-700 size-5 text-2xl flex justify-center items-center rounded-full bg-white"
+          >
+            &times;
+          </button>
+          <!-- signUp up -->
+          <div class="bg-[#EFFFF4] rounded-lg">
+            <h2 class="text-green-500 p-4 text-center">
+              Let's learn, share & inspire each other with our passion for
+              computer engineering. Sign up now 🤘🏼
+            </h2>
           </div>
+          <!-- content -->
+          <div class="p-4 md:p-8">
+            <div class="flex justify-between items-center">
+              <h2 class="text-2xl font-bold text-[#3D3D3D]">Sign In</h2>
+              <span
+                >Don’t have an account yet?
+                <button class="text-blue-500" id="openModalBtnTwo">
+                  Create new for free!
+                </button></span
+              >
+            </div>
+            <!-- signUp from -->
+            <div class="md:flex gap-5 justify-between items-buttom mt-6">
+              <!-- left site -->
+              <div class="w-full md:min-w-[320px]">
+                <form>
+                  <div
+                    class="[&>input]:border-2 [&>input]:p-3 [&>input]:outline-none [&>input]:w-full"
+                  >
+                    <input type="email" placeholder="Email" />
+                  </div>
+                  <div
+                    class="[&>input]:border-2 [&>input]:p-3 [&>input]:outline-none [&>input]:w-full"
+                  >
+                    <input type="password" placeholder="password" />
+                  </div>
+                  <div
+                    class="[&>input]:p-3 [&>input]:outline-none [&>input]:w-full my-5 bg-blue-500 rounded-full text-white font-bold cursor-pointer"
+                  >
+                    <input type="submit" value="Sign In" />
+                  </div>
+                </form>
+                <div>
+                  <button class="p-3 border-2 text-center w-full">
+                    <i class="fa-brands fa-facebook text-blue-500 mr-2"></i>
+                    Sign Up with Facebook
+                  </button>
+                </div>
+                <div>
+                  <button class="p-3 border-2 text-center w-full my-2">
+                    <i class="fa-brands fa-google text-orange-500 mr-2"></i>
+                    Sign Up with Google
+                  </button>
+                  <button class="p-3 text-center w-full my-2">
+                    Forget Password
+                  </button>
+                </div>
+              </div>
+              <!-- right site -->
+              <div class="hidden md:block min-w-[320px]">
+                <figure class="w-full">
+                  <img src="./images//signUpBanner.png" alt="" />
+                </figure>
+              </div>
+            </div>
+            <!-- signUp from -->
+          </div>
+        </div>
       </div>
-  </div>
       <!-- modal -->
-    
-    
-    
-    <!-- small sccan for post   -->
-     <div class="post_button size-4 p-4 cursor-pointer absolute right-5 top-[90%] bg-red-400 flex justify-center items-center rounded-full">
-      <i class="fa-solid fa-pencil text-white"></i>
-     </div>
-    <!-- small sccan for post   -->
 
+      <!-- small sccan for post   -->
+      <div
+        class="md:hidden post_button size-4 p-4 cursor-pointer absolute right-5 top-[90%] bg-red-400 flex justify-center items-center rounded-full"
+      >
+        <i class="fa-solid fa-pencil text-white"></i>
+      </div>
+      <!-- small sccan for post   -->
     </main>
 
     <script src="script.js"></script>

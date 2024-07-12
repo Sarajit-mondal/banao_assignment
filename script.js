@@ -7,6 +7,7 @@ var modal = document.getElementById("myModal");
 var openModalBtn = document.getElementById("openModalBtn");
 // Get open modal button
 var openModalBtnTwo = document.getElementById("openModalBtnTwo");
+var openModalBtnThere = document.getElementById("openModalBtnThree");
 
 // Get close button
 var closeBtn = document.getElementsByClassName("close")[0];
@@ -19,10 +20,6 @@ var modalSignIn = document.getElementById("mySignInModal");
 // Get open modal sign in button
 var openModalBtnSignIn = document.getElementById("signInOpenModalBtn");
 
-
-
-
-
 dropDownBtn.forEach((btn, btnInx) => {
   btn.addEventListener("click", () => {
     console.log(btnInx);
@@ -34,54 +31,48 @@ dropDownBtn.forEach((btn, btnInx) => {
   });
 });
 
-
-
-
-
 // Listen for open click
-openModalBtn.onclick = function() {
-  modalSignIn.classList.add("hidden")
-    modal.classList.remove("hidden");
-}
+openModalBtn.onclick = function () {
+  modalSignIn.classList.add("hidden");
+  modal.classList.remove("hidden");
+};
 // Listen for open tWO click
-openModalBtnTwo.onclick = function() {
-  modalSignIn.classList.add("hidden")
-    modal.classList.remove("hidden");
-}
-openModalBtnSignIn.onclick = ()=>{
+openModalBtnTwo.onclick = function () {
+  modalSignIn.classList.add("hidden");
+  modal.classList.remove("hidden");
+};
+// Listen for open tWO click
+openModalBtnThere.onclick = function () {
+  modalSignIn.classList.add("hidden");
+  modal.classList.remove("hidden");
+};
+openModalBtnSignIn.onclick = () => {
   modal.classList.add("hidden");
-  modalSignIn.classList.remove("hidden")
-}
-
-
+  modalSignIn.classList.remove("hidden");
+};
 
 // Listen for close click
-closeBtn.onclick = function() {
-    modal.classList.add("hidden");
-}
+closeBtn.onclick = function () {
+  modal.classList.add("hidden");
+};
 // Listen for close click
-closeBtnOne.onclick = function() {
-    modalSignIn.classList.add("hidden");
-}
-
-
+closeBtnOne.onclick = function () {
+  modalSignIn.classList.add("hidden");
+};
 
 // Listen for outside click
-window.onclick = function(event) {
-    if (event.target == modal || event.target == modalSignIn) {
-        modal.classList.add("hidden");
-        modalSignIn.classList.add("hidden");
-    }
-}
+window.onclick = function (event) {
+  if (event.target == modal || event.target == modalSignIn) {
+    modal.classList.add("hidden");
+    modalSignIn.classList.add("hidden");
+  }
+};
 
-const postBtn = document.querySelector('.post_button')
-//scroll 
-window.onscroll = ((e)=>{
- console.log(window.scrollY)
-  const screenHeight = screen.height - 170
-   postBtn.style.top = `${screenHeight + window.scrollY}px`
- console.log(screenHeight , screen.height)
-
-
-})
-
+const postBtn = document.querySelector(".post_button");
+//scroll
+window.onscroll = (e) => {
+  console.log(window.scrollY);
+  const screenHeight = screen.height - 170;
+  postBtn.style.top = `${screenHeight + window.scrollY}px`;
+  console.log(screenHeight, screen.height);
+};
